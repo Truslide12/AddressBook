@@ -18,47 +18,58 @@ const routes = [
     // Project routes
     {
         path: '/',
+        name: home,
         component: home,
     },
     {
         path: '/home',
+        name: home,
         component: home,
     },
     {
         path: '/create',
+        name: create,
         component: create,
     },
     {
         path: '/createAddress',
+        name: createAddress,
         component: createAddress,
     },
     {
         path: '/deleteModal',
+        name: deleteModal,
         component: deleteModal,
     },
     {
         path: '/details',
+        name: details,
         component: details,
     },
     {
         path: '/edit',
+        name: edit,
         component: edit,
     },
     {
         path: '/editAddress',
+        name: editAddress,
         component: editAddress,
     },
 
     {
         path: '/form_address',
+        name: form_address,
         component: form_address,
     },
     {
         path: '/form_contact',
+        name: form_contact,
         component: form_contact,
     },
     {
         path: '/search',
+        name: form_search,
         component: form_search,
     },
 ]
