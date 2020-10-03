@@ -287,7 +287,7 @@ export default {
             if(this.data.phone.trim()=='') return this.e('Phone number is required')
             if(this.data.birthday.trim()=='') return this.e('Birthday is required')
 			const res = await this.callApi(
-				'post',
+				'put',
 				'app/editContact',
 				this.editData
 			);
@@ -335,7 +335,7 @@ export default {
 			// How to set a new attribute that was not loaded initially
 			// this.$set(contact, 'isDeleting', true)
 			this.isDeleting = true
-			const res = await this.callApi('post', 'app/deleteContact', this.deleteItem)
+			const res = await this.callApi('delete', 'app/deleteContact', this.deleteItem)
 			if(res.status===200){
 				this.contactLists.splice(this.deletingIndex, 1) // this will splice the list at i and remove it from the list on the front end
 				this.s('contact has been deleted successfully')

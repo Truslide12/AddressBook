@@ -1,14 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
-use App\Models\Address;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 // use Kyslik\ColumnSortable;
 // use Kyslik\ColumnSortable\Sortable;
-use Laravel\Scout\Searchable;
-
+// use Laravel\Scout\Searchable;
 
 class Contact extends Model
 {
@@ -22,7 +19,7 @@ class Contact extends Model
 
     public function addresses()
     {
-        return $this->hasMany('App\Address');
+        return $this->hasMany('App\Models\Address');
     }
 
     static function getFields()
@@ -30,10 +27,10 @@ class Contact extends Model
         return [ 'firstName', 'lastName', 'email', 'phone', 'birthday' ];
     }
 
-    public function toSearchableArray()
-    {
-        $array = $this->toArray();
+    // public function toSearchableArray()
+    // {
+    //     $array = $this->toArray();
 
-        return $array;
-    }
+    //     return $array;
+    // }
 }

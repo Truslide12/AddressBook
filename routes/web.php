@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 // Contact Routes
 Route::get('app/details', 'contactController@details');
 Route::get('app/show', 'contactController@show');

@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Contact;
-use App\Models\Address;
+use App\Contact;
+use App\Address;
 class ContactSeeder extends Seeder
 {
     /**
