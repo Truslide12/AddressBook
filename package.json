@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "ajax": "0.0.4",
         "algoliasearch": "^4.5.1",
         "bootstrap": "^4.5.2",
         "bootstrap-vue": "^2.17.3",
